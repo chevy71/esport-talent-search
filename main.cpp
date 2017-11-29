@@ -28,7 +28,10 @@
 
 #include <QApplication>
 #include <QTextStream>
+
 #include "BrainBWin.h"
+
+#include "QuestionHandler.h"
 
 int main(int argc, char **argv)
 {
@@ -58,6 +61,8 @@ int main(int argc, char **argv)
     qout << QString::fromUtf8("részleteket a GNU General Public License tartalmaz.\n") << endl;
 
     qout << "http://gnu.hu/gplv3.html" << endl;
+
+	QuestionHandler::getPlayerInfo();
 
     BrainBWin brainBWin(400, 400);
     brainBWin.show();

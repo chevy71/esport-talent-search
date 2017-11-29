@@ -1,3 +1,7 @@
+# Introduction
+
+This program is a fork of the original software. This version is able to query the player's information (name, age, etc.) and send the benchmark data to a server. It achieves this with the help of the _libcurl_ library.
+
 # Benchmarking Cognitive Abilities of the Brain with Computer Games
 
 ## Series No 5

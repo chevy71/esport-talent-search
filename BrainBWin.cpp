@@ -58,7 +58,7 @@ void BrainBWin::endAndStats(const int &t)
     qDebug()  << "The result can be found in the directory " + statDir;
     qDebug()  << "\n\n\n";
 
-    save(t);
+    //save(t);
     close();
 }
 

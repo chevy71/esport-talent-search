@@ -86,7 +86,7 @@ class BrainBThread : public QThread
     cv::Mat prev {3*40, 3*40, CV_8UC3, cv::Scalar ( 0, 0, 255 ) };
     int bps;
     long time {0};
-    long endTime {10*60*10};
+    long endTime {5*10}; //TODO 10*60*10 az eredeti
     int delay {100};
 
     bool paused {true};

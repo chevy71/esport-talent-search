@@ -26,15 +26,16 @@
  #
  #
  
-QT += widgets core
+QT += widgets core network
 CONFIG += c++11 c++14 c++17
 QMAKE_CXXFLAGS += -fopenmp
 LIBS += -fopenmp 
 LIBS += `pkg-config --libs opencv`
+LIBS += -lcurl
 
 TEMPLATE = app
 TARGET = BrainB
 INCLUDEPATH += .
 
-HEADERS += BrainBThread.h  BrainBWin.h
-SOURCES += BrainBThread.cpp  BrainBWin.cpp  main.cpp
+HEADERS += BrainBThread.h  BrainBWin.h PlayerDataHolder.h QuestionHandler.h
+SOURCES += BrainBThread.cpp  BrainBWin.cpp  main.cpp PlayerDataHolder.cpp
